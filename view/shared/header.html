@@ -1,0 +1,46 @@
+<header ng-controller="headerCtrl">
+	<nav class="navbar navbar-expand-lg navbar-light navbar__lidery">
+		<a class="navbar-brand" href="/">
+			<img src="../img/icons/logo-lidery.svg" alt="">
+		</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+		 aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent" ng-class="{'show': closeMenu}" ng-click="fnMenu(true)">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active">
+						{{closeMenu}}
+					<a class="nav-link" href="#">Início
+						<span class="sr-only">(current)</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#!/beneficios" id="navbarDropdown" role="button"  aria-haspopup="true"
+					 aria-expanded="false">
+						Benefícios
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="#!/clube-de-vantagem">Clube de vantagens</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#!/seguro-acidentes-pessoais">Seguro acidentes pessoais</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item" href="#!/sorte-premiada">Sorte premiada</a>
+					</div>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#!/about-us">Quem somos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#!/lidery-social">Lidery social</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#!/contato">Contato</a>
+				</li>
+			</ul>
+			<a class="btn btn--blue mr-3" href="javascript:void(0);">Cadastrar</a>
+			<a class="btn btn--green" href="http://clube.lidery.org.br/">Entrar</a>
+		</div>
+	</nav>
+</header>
