@@ -44,6 +44,13 @@ h1, h2, h3, h4, h5{
 .blue-text-fundep{
   color: var(--fundep-mid-blue)
 }
+
+.title__form {
+  color: #1e355b;
+    border-bottom: 1px solid #dedede;
+    background: rgba(15, 40, 80, 0.05);
+    padding: 10px;
+}
 /* BREAKPOINTS */
 .max-1440 {
   max-width: 1440px;
@@ -72,6 +79,11 @@ h1, h2, h3, h4, h5{
   font-size: 12px;
   font-weight: 700;
   color: white;
+}
+
+.btn-blue:hover {
+  color: white;
+  background: #287a94;
 }
 
 .bg-main {
@@ -949,7 +961,7 @@ ading {
 }
 
 .fieldlabels {
-  color: var(--fundep-mid-blue);
+  color: var(--main-fundep);
   text-align: left;
   font-weight:600;
 }
@@ -1037,6 +1049,7 @@ ading {
 
 .fieldlabels{
   padding-top: 1em;
+  font-size: 14px;
 }
 
 
