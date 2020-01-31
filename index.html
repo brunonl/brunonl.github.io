@@ -20,15 +20,15 @@
 		<div class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-fluid top-bar d-flex justify-content-end">
 				<div class="row">
-					<div class="col-md-12">
-						<ul class="navbar-nav mr-auto">
-							<li class="nav-item">
+					<div class="col-lg-12">
+						<ul class="navbar-nav mr-auto flex-row">
+							<li class="nav-item mr-3">
 								<a class="nav-link" href="#">dúvidas</a>
 							</li>
-							<li class="nav-item">
+							<li class="nav-item mr-3">
 								<a class="nav-link" href="#">Atendimento fundep</a>
 							</li>
-							<li class="nav-item dropdown">
+							<li class="nav-item dropdown mr-3">
 								<a class="nav-link dropdown-toggle" href="#" id="lang1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Idioma</a>
 								<div class="dropdown-menu" aria-labelledby="lang1">
 									<a class="dropdown-item" href="#">PORT</a>
@@ -41,12 +41,12 @@
 		</div>
 		<div class="navbar navbar-expand-lg navbar-dark">
 			<div class="container-fluid  top-bar-2 d-flex justify-content-end">
-				<div class="col-md-2">
+				<div class="col-lg-2">
 					<a class="navbar-brand" href="#">
 						<img src="assets/img/logo-bg.svg" alt="" class="img-fluid">
 					</a>
 				</div>
-				<div class="col-md-6 d-flex justify-content-start">
+				<div class="col-lg-6 d-flex justify-content-start">
 					<div class="form-group has-search-right">
 						<a href="#" class="form-control-feedback">
 							<svg xmlns="http://www.w3.org/2000/svg" width="19.474" height="14.457" viewBox="0 0 19.474 14.457">
@@ -61,7 +61,7 @@
 						<input type="text" class="form-control" placeholder="O que você quer estudar ?">
 					</div>
 				</div>
-				<div class="col-md-4 d-flex justify-content-end">
+				<div class="col-lg-4 d-flex justify-content-end">
 					<ul class="navbar-nav top-bar-">
 						<li class="nav-item">
 							<a class="nav-link" href="#" data-toggle="modal" data-target="#login">login</a>
@@ -75,62 +75,113 @@
 
 		</div>
 	</div>
-	<div id="main">
-		<div class="container-fluid bg-fundep main-header">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-6">
-						<h1 class="hero-title">Plataforma de Cursos de
-							<br> Extensão</h1>
-					</div>
-					<div class="col-md-6">
+	<div class="navbar-sticky--mobile">
+		<div class="navbar__top">
+			<div class="navbar navbar-expand-lg navbar-dark">
+				<div class="container-fluid d-flex justify-content-end">
+					<div class="row">
+						<div class="col-lg-12">
+							<ul class="navbar-nav mr-auto flex-row">
+								<li class="nav-item dropdown mr-3">
+									<a class="nav-link dropdown-toggle" href="#" id="lang1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Idioma</a>
+									<div class="dropdown-menu" aria-labelledby="lang1">
+										<a class="dropdown-item" href="#">PORT</a>
+									</div>
+								</li>
+								<li class="nav-item mr-3">
+									<a class="nav-link" href="#">Login</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">
+										<button type="button" class="btn btn-blue btn-sm">CADASTRE-SE</button>
+									</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+		<div class="navbar__bottom">
+			<img class="logo__brand" src="assets/img/logo-bg.svg" alt="" class="img-fluid">
+			<div class="menu__icon" onclick="openNav()">
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="container-fluid bg-fundep main-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6">
+						<h1 class="hero-title">Plataforma de Cursos de
+							<br> Extensão</h1>
+					</div>
+					<div class="col-lg-6 mt-5 d-lg-none">
+						<div class="form-group has-search-right">
+							<a href="#" class="form-control-feedback">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19.474" height="14.457" viewBox="0 0 19.474 14.457">
+									<g id="arrow-right" transform="translate(0 1.413)">
+										<path id="Path" d="M0,.415H18" transform="translate(0 5.4)" fill="none" stroke="#fff" stroke-miterlimit="10" stroke-width="2"
+										/>
+										<path id="Path-2" data-name="Path" d="M0,0,6.3,5.815,0,11.631" transform="translate(11.7)" fill="none" stroke="#fff" stroke-linecap="square"
+										 stroke-miterlimit="10" stroke-width="2" />
+									</g>
+								</svg>
+							</a>
+							<input type="text" class="form-control d-lg-none" placeholder="O que você quer estudar ?">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 		<div class="container-fluid max-1440">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-lg-4">
 				</div>
-				<div class="col-md-8">
+				<div class="col-lg-8">
 					<div class="row justify-content-end cards-flex">
-						<div class="col-md-4">
+						<div class="col-lg-4 mb-4 mb-lg-0">
 							<div class="card fundep-card">
 								<div class="card-body d-flex flex-column">
 									<a class="link__white" href="./cursos.html">
-										<img src="/assets/img/cursos-icon.svg" class="img-fluid align-self-end" alt="Cursos">
+										<img class="fundep-card__img__avatar" src="/assets/img/cursos-icon.svg" class="img-fluid align-self-end" alt="Cursos">
 										<h5 class="card-title align-self-start pt-4">Cursos</h5>
 										<a href="#" class="link">
-											<img src="/assets/img/arrow-right.svg" class="img-fluid align-self-start pt-3" alt="Cursos">
+											<img class="fundep-card__img__arrow" src="/assets/img/arrow-right.svg" class="img-fluid align-self-start pt-3" alt="Cursos">
 										</a>
 									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 mb-4 mb-lg-0">
 							<div class="card fundep-card">
 								<div class="card fundep-card">
 									<a class="link__white" href="./eventos.html">
 										<div class="card-body d-flex flex-column">
-											<img src="/assets/img/eventos-icon.svg" class="img-fluid align-self-end" alt="Cursos">
+											<img class="fundep-card__img__avatar" src="/assets/img/eventos-icon.svg" class="img-fluid align-self-end" alt="Cursos">
 											<h5 class="card-title align-self-start pt-4">Eventos</h5>
 											<a href="#" class="link">
-												<img src="/assets/img/arrow-right.svg" class="img-fluid align-self-start pt-3" alt="Cursos">
+												<img class="fundep-card__img__arrow" src="/assets/img/arrow-right.svg" class="img-fluid align-self-start pt-3" alt="Cursos">
 											</a>
 										</div>
 									</a>
 								</div>
 							</div>
 						</div>
-						<div class="col-md-4">
+						<div class="col-lg-4 mb-4 mb-lg-0">
 							<div class="card fundep-card">
 								<div class="card fundep-card">
 									<a class="link__white" href="./eventos.html">
 										<div class="card-body d-flex flex-column">
-											<img src="/assets/img/atividades-icon.svg" class="img-fluid align-self-end" alt="Cursos">
+											<img class="fundep-card__img__avatar" src="/assets/img/atividades-icon.svg" class="img-fluid align-self-end" alt="Cursos">
 											<h5 class="card-title align-self-start pt-4">Atividades</h5>
 											<a href="#" class="link">
-												<img src="/assets/img/arrow-right.svg" class="img-fluid align-self-start pt-3" alt="Cursos">
+												<img class="fundep-card__img__arrow" src="/assets/img/arrow-right.svg" class="img-fluid align-self-start pt-3" alt="Cursos">
 											</a>
 										</div>
 									</a>
@@ -141,18 +192,19 @@
 				</div>
 			</div>
 		</div>
-		<div class="container max-1280 pt-5 pb-5">
+
+		<div class="container max-1280 pb-4 pt-4 pt-lg-5 pb-lg-5">
 			<div class="row">
-				<div class="col-md-12 position-relative">
-					<h1 class="hero-title pt-5 pb-5">
+				<div class="col-lg-12 position-relative">
+					<h1 class="hero-title pb-4 pt-4 pt-lg-5 pb-lg-5">
 						Encontre o conteúdo que mais
 						<br /> combina com você.
 					</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12 col-sm-12 col-lg-8">
-					<div class="card card-promo text-white overlay shadow">
+				<div class="col-lg-8 pr-lg-0 d-flex flex-column justify-content-center">
+					<div class="card card-promo text-white overlay shadow mb-3 mb-lg-0">
 						<a class="link__white" href="./cursos.html">
 							<img class="card-img" src="/assets/img/curso-cerveja.png" alt="Card image">
 							<div class="card-img-overlay d-flex align-items-end">
@@ -166,8 +218,8 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-md-12 col-sm-12 col-lg-4 d-flex justify-content-between flex-column">
-					<div class="card card-promo text-white overlay shadow">
+				<div class="col-lg-4 d-flex flex-column justify-content-between">
+					<div class="card card-promo text-white overlay shadow mb-3 mb-lg-0">
 						<a class="link__white" href="./cursos.html">
 							<img class="card-img" src="/assets/img/curso-cerveja.png" alt="Card image">
 							<div class="card-img-overlay d-flex align-items-end">
@@ -180,7 +232,7 @@
 							</div>
 						</a>
 					</div>
-					<div class="card card-promo text-white overlay shadow">
+					<div class="card card-promo text-white overlay shadow mb-3 mb-lg-0">
 						<a class="link__white" href="./cursos.html">
 							<img class="card-img" src="/assets/img/curso-cerveja.png" alt="Card image">
 							<div class="card-img-overlay d-flex align-items-end">
@@ -196,7 +248,8 @@
 				</div>
 			</div>
 		</div>
-		<div class="container max-1280 pb-5 pt-5">
+
+		<div class="container max-1280 pb-4 pt-4 pt-lg-5 pb-lg-5">
 			<div class="row">
 				<div class="col-lg-12 filter-bar">
 					<div class="btn-toolbar justify-content-between" role="toolbar">
@@ -225,49 +278,8 @@
 					</div>
 				</div>
 				<div class="col-lg-12 pt-5">
-					<div class="card-deck caes">
-						<div class="card">
-							<span class="badge cae-type"> Evento</span>
-							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
-							<div class="card-body">
-							<a href="eventos.html" class="card-url"></a>
-								<p class="card-text">
-									<small class="text-muted">30 de set, 20:00</small>
-								</p>
-								<h5 class="card-title">Simpósio de Farmácia em Práticas Integrativas e Complementares em Saúde</h5>
-								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little
-									bit longer.</p>
-							</div>
-						</div>
-						<div class="card">
-							<span class="badge cae-type"> Evento</span>
-							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
-							<a href="eventos.html" class="card-url"></a>
-							<div class="card-body">
-								<p class="card-text">
-									<small class="text-muted">30 de set, 20:00</small>
-								</p>
-								<h5 class="card-title">Passeio cultural: Ouro Preto vista sobre os olhos do passado.</h5>
-								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-							</div>
-						</div>
-						<div class="card">
-							<span class="badge cae-type"> Evento</span>
-							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
-							<a href="eventos.html" class="card-url"></a>
-							<div class="card-body">
-								<p class="card-text">
-									<small class="text-muted">30 de set, 20:00</small>
-								</p>
-								<h5 class="card-title">Curso de Produção de Cerveja Artesanal 2º/2019
-								</h5>
-								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer
-									content than the first to show that equal height action.</p>
-							</div>
-						</div>
-					</div>
-					<div class="card-deck caes pt-4">
-						<div class="card">
+					<div class="row caes">
+						<div class="col-md-6 col-lg-3 card">
 							<span class="badge cae-type"> Evento</span>
 							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
 							<div class="card-body">
@@ -280,7 +292,7 @@
 									bit longer.</p>
 							</div>
 						</div>
-						<div class="card">
+						<div class="col-md-6 col-lg-3 card">
 							<span class="badge cae-type"> Evento</span>
 							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
 							<a href="eventos.html" class="card-url"></a>
@@ -292,7 +304,75 @@
 								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
 							</div>
 						</div>
-						<div class="card">
+						<div class="col-md-6 col-lg-3 card">
+							<span class="badge cae-type"> Evento</span>
+							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
+							<a href="eventos.html" class="card-url"></a>
+							<div class="card-body">
+								<p class="card-text">
+									<small class="text-muted">30 de set, 20:00</small>
+								</p>
+								<h5 class="card-title">Curso de Produção de Cerveja Artesanal 2º/2019
+								</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer
+									content than the first to show that equal height action.</p>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-3 card">
+							<span class="badge cae-type"> Evento</span>
+							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
+							<div class="card-body">
+								<a href="eventos.html" class="card-url"></a>
+								<p class="card-text">
+									<small class="text-muted">30 de set, 20:00</small>
+								</p>
+								<h5 class="card-title">Simpósio de Farmácia em Práticas Integrativas e Complementares em Saúde</h5>
+								<p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little
+									bit longer.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 card">
+							<span class="badge cae-type"> Evento</span>
+							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
+							<a href="eventos.html" class="card-url"></a>
+							<div class="card-body">
+								<p class="card-text">
+									<small class="text-muted">30 de set, 20:00</small>
+								</p>
+								<h5 class="card-title">Passeio cultural: Ouro Preto vista sobre os olhos do passado.</h5>
+								<p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 card">
+							<span class="badge cae-type"> Evento</span>
+							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
+							<a href="eventos.html" class="card-url"></a>
+							<div class="card-body">
+								<p class="card-text">
+									<small class="text-muted">30 de set, 20:00</small>
+								</p>
+								<h5 class="card-title">Curso de Produção de Cerveja Artesanal 2º/2019
+								</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer
+									content than the first to show that equal height action.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 card">
+							<span class="badge cae-type"> Evento</span>
+							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
+							<a href="eventos.html" class="card-url"></a>
+							<div class="card-body">
+								<p class="card-text">
+									<small class="text-muted">30 de set, 20:00</small>
+								</p>
+								<h5 class="card-title">Curso de Produção de Cerveja Artesanal 2º/2019
+								</h5>
+								<p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer
+									content than the first to show that equal height action.</p>
+							</div>
+						</div>
+						<div class="col-md-6 col-lg-3 card">
 							<span class="badge cae-type"> Evento</span>
 							<img class="card-img-top" src="/assets/img/curso-cerveja.png" alt="Card image cap">
 							<a href="eventos.html" class="card-url"></a>
@@ -310,9 +390,10 @@
 				</div>
 			</div>
 		</div>
-		<div class="container max-1280 video-cta pt-5">
+
+		<div class="container max-1280 video-cta pt-5 d-none">
 			<div class="row  bg-video">
-				<div class="col-md-4 text-white pt-5 pb-2">
+				<div class="col-lg-4 text-white pt-5 pb-2">
 					<h1>
 						Conheça
 						<br /> nossa
@@ -322,21 +403,22 @@
 					<p class="max-200 pt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
 						aliqua. Ut enim ad.</p>
 				</div>
-				<div class="col-md-8">
+				<div class="col-lg-8">
 					<img src="./assets/img/plyr.jpg" alt="video" class="img-fluid video-overlay">
 				</div>
 			</div>
 		</div>
-		<div class="container max-1280 pt-5 top-3">
+
+		<div class="container max-1280 pb-4 pt-4 pt-lg-5 pb-lg-5">
 			<div class="row">
-				<div class="col-md-12 position-relative">
+				<div class="col-lg-12 position-relative">
 					<h1 class="hero-title pt-5 pb-5">
 						Nossos principais clientes
 					</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-lg-12">
 					<section class="customer-logos slider pt-5">
 						<div class="slide">
 							<img src="/assets/img/logo-int.png" class="img-fluid">
@@ -364,12 +446,12 @@
 			</div>
 		</div>
 
-		<div class="container pt-5 top-3">
+		<div class="container pt-5 top-3 d-none">
 			<div class="row">
-				<div class="col-md-6 col-md-6 d-none d-md-block d-lg-block">
+				<div class="col-lg-6 col-lg-6 d-none d-lg-block d-lg-block">
 					<img src="/assets/img/news-letter.svg" class="img-fluid" />
 				</div>
-				<div class="col-md-6 newsletter-container d-flex">
+				<div class="col-lg-6 newsletter-container d-flex">
 					<div class="card newsletter">
 						<div class="card-body d-flex  flex-column text-center justify-content-center">
 							<h3 class="card-title ">
@@ -398,15 +480,16 @@
 				</div>
 			</div>
 		</div>
-		<div class="container">
+
+		<div class="container  pb-4 pt-4 pt-lg-5 pb-lg-5">
 			<div class="contacts mb-5" style="width: 100%;">
 				<div class="row">
-					<div class="col-md-4 border-right">
+					<div class="col-lg-4 border-right">
 						<p>FALE COM A FUNDEP</p>
 						<h3>
 							<i class="fas fa-phone blue-text-fundep"></i> (31) 3409-4200</h3>
 					</div>
-					<div class="col-md-4">
+					<div class="col-lg-4">
 						<p>LOCALIZAÇÃO</p>
 						<p>
 							<b>Av. Pres. Antônio Carlos, 6627
@@ -414,7 +497,7 @@
 						</p>
 
 					</div>
-					<div class="col-md-4">
+					<div class="col-lg-4">
 						<p>OUTROS CONTATOS</p>
 						<p class="pb-0 pt-0">
 							<b>
@@ -427,11 +510,12 @@
 				</div>
 			</div>
 		</div>
+
 		<footer>
 			<div class="container-fluid bg-main pt-5 pb-3">
 				<div class="container text-white " style="border-top: 2px solid white;">
 					<div class="row pt-4">
-						<div class="col-md-3">
+						<div class="col-lg-3">
 							<img src="assets/img/fundep-logo-white.svg" alt="logo" class="img-fluid">
 							<p class=" pt-4">
 								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -444,7 +528,7 @@
 								<img src="/assets/img/018-youtube.svg" class="img-fluid" />
 							</div>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3">
 							<h6>Atividades</h6>
 							<ul class="list-group list-group-flush border-0 pt-4">
 								<li class="list-group-item">Cras justo odio</li>
@@ -454,7 +538,7 @@
 								<li class="list-group-item">Vestibulum at eros</li>
 							</ul>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3">
 							<h6>Páginas do Site</h6>
 							<ul class="list-group list-group-flush border-0 pt-4">
 								<li class="list-group-item">Cras justo odio</li>
@@ -464,7 +548,7 @@
 								<li class="list-group-item">Vestibulum at eros</li>
 							</ul>
 						</div>
-						<div class="col-md-3">
+						<div class="col-lg-3">
 							<h6>Links Úteis</h6>
 							<ul class="list-group list-group-flush border-0 pt-4">
 								<li class="list-group-item">Cras justo odio</li>
@@ -480,6 +564,18 @@
 
 		</footer>
 	</div>
+	</div>
+
+	<!-- Menu -->
+	<div id="myMenu" class="overlay__menu">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay__menu__content">
+			<a href="cursos.html">Cursos</a>
+			<a href="eventos.html">Eventos</a>
+			<a href="atividades.html">Atividades</a>
+			<a href="atividades.html">Dúvidas</a>
+			<a href="atividades.html">Atendimento Fundep</a>
+		</div>
 	</div>
 
 	<!-- MODAL LOGIN -->
@@ -543,8 +639,7 @@
 			</div>
 		</div>
 	</div>
-	<script src="//code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
-	 crossorigin="anonymous"></script>
+	<script src="//code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
 	 crossorigin="anonymous"></script>
 	<script src="//stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"

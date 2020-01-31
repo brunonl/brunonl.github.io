@@ -1,7 +1,5 @@
 $(document).ready(function () {
 
-
-
 	$('#pills-forgot-link').on('click', function () {
 
 		$('#login-tab').removeClass('active')
@@ -147,6 +145,16 @@ $(document).ready(function () {
 	})
 
 });
+
+/* Open */
+function openNav() {
+	document.getElementById("myMenu").style.height = "100%";
+}
+
+/* Close */
+function closeNav() {
+	document.getElementById("myMenu").style.height = "0%";
+}
 
 
 // var tl = anime.timeline({
