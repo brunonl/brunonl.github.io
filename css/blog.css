@@ -9,6 +9,8 @@ body {
   font-weight: 400;
 }
 
+#more {display: none;}
+
 .btn-primary {
   background: #00446c;
   border-color: #00446c;
@@ -72,6 +74,15 @@ body {
 .news__section .subtitle {
   font-size: 18px;
   font-weight: 400;
+}
+
+.card__blog .card-title {
+    font-weight: 600;
+    color: #00446c;
+}
+
+.card__blog .card-text {
+    font-size: 18px;
 }
 
 .footer {
