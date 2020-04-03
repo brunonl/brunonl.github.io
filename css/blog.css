@@ -7,6 +7,7 @@ body {
   padding-top: 56px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 #more {display: none;}
