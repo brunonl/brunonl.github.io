@@ -14,3 +14,8 @@ function readMore(target) {
         moreText.style.display = "inline";
     }
 }
+
+function scrollToAnchor(item) {
+	var item = $(item);
+	$('html,body').animate({ scrollTop: item.offset().top }, 'slow');
+} 
