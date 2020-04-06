@@ -29,7 +29,7 @@ body {
   border-color: #018faf;
   border-radius: 0;
   padding: 15px 30px;
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .btn-primary:hover,.btn-primary:active {
@@ -98,19 +98,19 @@ body {
 }
 
 .resume__section {
-  padding: 85px 0;
+  padding: 70px 0;
   background: linear-gradient(160deg,var(--primary-color),var(--secondary-color));
   color: white;
 }
 
 .resume__section .title {
-  font-size: 65px;
+  font-size: 50px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .resume__section .subtitle {
-  font-size: 27px;
+  font-size: 23px;
   font-weight: 300;
   margin-bottom: 45px;
 }
@@ -118,19 +118,19 @@ body {
 .contact__section {
   background: linear-gradient(var(--secondary-color),var(--primary-color));
   border-top: 3px solid #222e4a73;
-  padding: 85px 0px;
+  padding: 70px 0px;
   color: white;
   text-align: center;
 }
 
 .contact__section .title {
-  font-size: 43px;
+  font-size: 40px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
 .contact__section .subtitle {
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 400;
   margin-bottom: 45px;
 }
