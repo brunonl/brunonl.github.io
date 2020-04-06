@@ -168,6 +168,46 @@ body {
     font-size: 15px;
   }
 
+  .navtab__blog .nav-link {
+    font-size: 18px;
+  }
+
+  .contact__section {
+    background: linear-gradient(var(--secondary-color),var(--primary-color));
+    border-top: 3px solid #222e4a73;
+    padding: 40px 15px;
+    color: white;
+    text-align: center;
+  }
+  
+  .contact__section .title {
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .contact__section .subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    margin-bottom: 45px;
+  }
+
+  .resume__section {
+    padding: 40px 15px;
+  }
+
+  .resume__section .title {
+    font-size: 29px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  
+  .resume__section .subtitle {
+    font-size: 22px;
+    font-weight: 300;
+    margin-bottom: 45px;
+  }
+
   .news__section .title {
     font-size: 22px;
     font-weight: 700;
@@ -192,6 +232,6 @@ body {
   }
 
   .btn {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
