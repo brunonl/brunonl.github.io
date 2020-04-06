@@ -3,6 +3,12 @@
  * Copyright 2013-2019 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
  */
+ :root {
+   --primary-color: #09173a;
+   --secondary-color: #162d64; 
+   --tertiary-color: #018faf;
+   --footer-color: #091635;
+ }
 body {
   padding-top: 56px;
   font-family: 'Titillium Web', sans-serif;
@@ -12,9 +18,23 @@ body {
 
 #more {display: none;}
 
+.logo-ufmg {
+  width: 118px;
+  transform: translateY(3px);
+} 
+
 .btn-primary {
-  background: #00446c;
-  border-color: #00446c;
+  font-weight: 700;
+  background: #018faf;
+  border-color: #018faf;
+  border-radius: 0;
+  padding: 15px 30px;
+  font-size: 20px;
+}
+
+.btn-primary:hover,.btn-primary:active {
+  border-color: #00ffff !important;
+  background-color: #32acc7 !important;
 }
 
 .btn-outline-light {
@@ -27,13 +47,31 @@ body {
   color: rgb(45, 45, 45);
 }
 
-.btn-primary:hover {
-  background: #003351;
-  border-color: #003351;
+.page-item:first-child .page-link,.page-item:last-child .page-link {
+  padding: 15px 30px;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.navtab__blog .active{
+  color: #ffffff !important;
+  background-color: #09173a !important;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 15px 20px;
+  border-radius: 0;
+}
+
+.navtab__blog .nav-link {
+  border-radius: 0;
+  color: #09173a;
+  font-weight: 700;
+  font-size: 22px;
+  padding: 15px 20px;
 }
 
 .navbar__blog {
-  background: #00446c;
+  background: var(--primary-color);
 }
 
 .navbar__blog .navbar-brand {
@@ -59,22 +97,52 @@ body {
   color: rgba(255,255,255,.9);
 }
 
-.news__section {
-  padding: 50px;
-  background: #0069a6;
+.resume__section {
+  padding: 85px 0;
+  background: linear-gradient(160deg,var(--primary-color),var(--secondary-color));
+  color: white;
+}
+
+.resume__section .title {
+  font-size: 65px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.resume__section .subtitle {
+  font-size: 27px;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+.contact__section {
+  background: linear-gradient(var(--secondary-color),var(--primary-color));
+  border-top: 3px solid #222e4a73;
+  padding: 85px 0px;
   color: white;
   text-align: center;
 }
 
-.news__section .title {
-  font-size: 27px;
+.contact__section .title {
+  font-size: 43px;
   font-weight: 700;
-  
+  margin-bottom: 20px;
 }
 
-.news__section .subtitle {
-  font-size: 18px;
+.contact__section .subtitle {
+  font-size: 23px;
   font-weight: 400;
+  margin-bottom: 45px;
+}
+
+.card__blog {
+  border: 0;
+  border-radius: 3px;
+  box-shadow: 0px 1px 5px rgba(0,0,0,.1)!important;
+}
+
+.card__blog .card-body, .card__blog .card-footer {
+  background: #f9f9f9;
 }
 
 .card__blog .card-title {
@@ -87,7 +155,8 @@ body {
 }
 
 .footer {
-  background: #00446c;
+  background: var(--footer-color);
+  border-top: 3px solid #222e4a73;
 }
 
 @media (max-width: 768px) {
