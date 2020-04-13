@@ -16,7 +16,18 @@ body {
   overflow-x: hidden;
 }
 
-#more {display: none;}
+#more {
+  display: none;
+}
+
+small {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
 
 .logo-ufmg {
   width: 118px;
@@ -157,6 +168,10 @@ body {
 .footer {
   background: var(--footer-color);
   border-top: 3px solid #222e4a73;
+}
+
+.paginate__blog fieldset:not(:first-of-type) {
+  display: none
 }
 
 @media (max-width: 768px) {
