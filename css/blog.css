@@ -10,7 +10,7 @@
    --footer-color: #091635;
  }
 body {
-  padding-top: 56px;
+  padding-top: 74px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
@@ -58,6 +58,10 @@ small {
   color: rgb(45, 45, 45);
 }
 
+.navbar-toggler {
+  border: 0;
+}
+
 .page-item:first-child .page-link,.page-item:last-child .page-link {
   padding: 15px 30px;
   font-size: 17px;
@@ -86,7 +90,7 @@ small {
 }
 
 .navbar__blog .navbar-brand {
-  font-size: 2rem;
+  font-size: 32px;
   text-transform: uppercase;
   font-weight: 700;
   color: white;
@@ -153,7 +157,7 @@ small {
 }
 
 .card__blog .card-body, .card__blog .card-footer {
-  background: #f9f9f9;
+  background: #f6f6f6;
 }
 
 .card__blog .card-title {
@@ -175,6 +179,10 @@ small {
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 52px;
+  }
+
   h1 {
     font-size: 30px;
   }
@@ -183,7 +191,32 @@ small {
     font-size: 15px;
   }
 
+  .modal {
+    padding-right: 20px !important;
+  }
+
+  .modal .modal-dialog {
+    max-width: 700px !important;
+  }
+
+  .logo-ufmg {
+    width: 71px;
+  }
+
+  .navbar-toggler {
+    border: 0;
+    font-size: 15px;
+  }
+
+  .navbar__blog .nav-link {
+    font-size: 14px;
+  }
+
   .navtab__blog .nav-link {
+    font-size: 18px;
+  }
+  
+  .navbar__blog .navbar-brand {
     font-size: 18px;
   }
 
