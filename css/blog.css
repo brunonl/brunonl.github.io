@@ -20,6 +20,14 @@ body {
   display: none;
 }
 
+.modal {
+  padding-right: 0 !important;
+}
+
+main {
+  overflow-x: hidden;
+}
+
 small {
   color: black;
   font-weight: 700;
