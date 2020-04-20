@@ -1,19 +1,19 @@
-/*!
- * Start Bootstrap - Blog Home (https://startbootstrap.com/template-overviews/blog-home)
- * Copyright 2013-2019 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-blog-home/blob/master/LICENSE)
- */
- :root {
-   --primary-color: #09173a;
-   --secondary-color: #162d64; 
-   --tertiary-color: #018faf;
-   --footer-color: #091635;
- }
+:root {
+  --primary-color: #09173a;
+  --secondary-color: #253250; 
+  --tertiary-color: #33c6de;
+  --footer-color: #091635;
+}
+
 body {
   padding-top: 74px;
   font-family: 'Titillium Web', sans-serif;
   font-weight: 400;
   overflow-x: hidden;
+}
+
+h2 {
+  font-size: 32px;
 }
 
 #more {
@@ -44,16 +44,16 @@ small {
 
 .btn-primary {
   font-weight: 700;
-  background: #018faf;
-  border-color: #018faf;
+  background: var(--tertiary-color);
+  border-color: var(--tertiary-color);
   border-radius: 0;
-  padding: 15px 30px;
-  font-size: 17px;
+  padding: 13px 30px;
+  font-size: 15px;
 }
 
 .btn-primary:hover,.btn-primary:active {
-  border-color: #00ffff !important;
-  background-color: #32acc7 !important;
+  border-color: #289cae !important;
+  background-color: #289cae !important;
 }
 
 .btn-outline-light {
@@ -138,25 +138,40 @@ small {
   margin-bottom: 45px;
 }
 
+.action__section {
+  background: var(--secondary-color);
+  color: white;
+  padding: 50px;
+  text-align: center;
+}
+
+.action__section .title {
+  font-weight: 600;
+}
+
+.action__section .subtitle {
+  font-size: 17px;
+  font-weight: 400;
+  margin-bottom: 23px;
+}
+
 .contact__section {
-  background: linear-gradient(var(--secondary-color),var(--primary-color));
-  border-top: 3px solid #222e4a73;
-  padding: 70px 0px;
+  background: #101c3c;
+  padding: 50px;
   color: white;
   text-align: center;
 }
 
 .contact__section .title {
-  font-size: 40px;
-  font-weight: 700;
-  margin-bottom: 20px;
+  font-weight: 600;
 }
 
 .contact__section .subtitle {
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 400;
-  margin-bottom: 45px;
+  margin-bottom: 23px;
 }
+
 
 .card__blog {
   border: 0;
@@ -195,8 +210,16 @@ small {
     font-size: 30px;
   }
 
+  h2 {
+    font-size: 26px;
+  }
+
   p {
     font-size: 15px;
+  }
+
+  .paginate__blog .page-link {
+    font-size: 14px !important;
   }
 
   .modal .modal-dialog {
@@ -224,24 +247,12 @@ small {
     font-size: 18px;
   }
 
-  .contact__section {
-    background: linear-gradient(var(--secondary-color),var(--primary-color));
-    border-top: 3px solid #222e4a73;
-    padding: 40px 15px;
-    color: white;
-    text-align: center;
-  }
-  
-  .contact__section .title {
-    font-size: 29px;
-    font-weight: 700;
-    margin-bottom: 20px;
-  }
-  
   .contact__section .subtitle {
-    font-size: 17px;
-    font-weight: 400;
-    margin-bottom: 45px;
+    font-size: 14px;
+  }
+
+  .action__section .subtitle {
+    font-size: 14px;
   }
 
   .resume__section {
@@ -251,13 +262,13 @@ small {
   .resume__section .title {
     font-size: 29px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
   }
   
   .resume__section .subtitle {
-    font-size: 22px;
+    font-size: 17px;
     font-weight: 300;
-    margin-bottom: 45px;
+    margin-bottom: 35px;
   }
 
   .news__section .title {
